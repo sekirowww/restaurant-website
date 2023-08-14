@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/logo-icon-brown.png">    <!-- favicon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Shopping Cart</title>
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css.order/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css.order/general.css" />
+    <link rel="stylesheet" href="css.css" />
+  <style>
+    
+</style>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <header class="my-header">
+        <a href="./index.html#my-homepage"><img class="logo" alt="Lion Rock logo" src="logo.png"/></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="./index.html#my-homepage">Home</a></li>
+            <li><a class="main-nav-link" href="./index.html#my-homepage#menu">Meals</a></li>
+            <li><a class="main-nav-link" href="./index.html#my-homepage#about-us">About Us</a></li>
+            <li><a class="main-nav-link" href="./index.html#my-homepage#Contact">Contact Us</a></li>
+            <li><a class="main-nav-link" href="./index.html#my-homepage#booking">Reservation</a></li>
+            <li><a class="main-nav-link" href="./Cart.html">Pick-up Order</a></li>
+            <li><a class="main-nav-link nav-cta" href="">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      </div>
+    <br><br><br><br><br><br><br><br><br>
+ <header class="intro">
+
+  <h1 class="display-3">Order Cart</h1>
+  <h5 class="text-center">Our working hours are from 12pm to 10pm everyday.</h5>
+  <h5 class="text-center">Same day orders must be submitted at least 2 hours prior to store closing.</h5>
+  <h5 class="text-center">Your order will ready within 45 - 60mins.</h5>
+  <h5 class="text-center">For future orders, you have log-in access to our full catalog of items.</h5>
+  <h4 class="text-center">We will contact you when your order is ready.</h4>
+
+ <div class="action"></div>
+ </header>
+
+     <div class="col-75">
+    <div class="order-container shadow"> 
+   <h1></h1>
+   <p></p>
+   <div id="alerts"></div>
+<!-- <div class="productcont"> -->
+  <div class="row">
+    <div class="col">
+      <div class="product">
+        <h3 class="productname">Beef Wellington</h3>
+        <img src="./main/img.order/beef-wellington-600.jpg"
+          class="step-img"
+          alt="flank"/>
+          <p class="h3">Flack Steak</p>
+          <br>
+        <h4 class="price">$290</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+    </div>
+    <div class="col">
+      <div class="product">
+      <h2 class="productname">Prime Steaks</h2>
+      <img
+        src="./main/img.order/prime-steaks_600.jpg"
+        class="step-img"
+        alt="ribeye"/>
+        <p class="h5">Premium Angus Bone-In Ribeye</p>
+      <h4 class="price">$450</h4>
+      <button class="addtocart">Add To Cart</button>
+  </div>
+</div>
+    <div class="col">
+      <div class="product">
+        <h2 class="productname">T-bone Steak</h2>
+        <img
+          src="./main/img.order/T-bone Steak.jpeg"
+          class="step-img"
+          alt="tbone"/>
+          <p class="h5">Our SIGNATURE SELECT</p>
+        <h4 class="price">$430</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+  </div>
+        
+  <div class="row">
+    <div class="col">
+      <div class="product">
+        <h5 class="productname">Apple Salad w/ Chicken</h5>
+        <img
+          src="./main/img.order/salad-600.jpg"
+          class="step-img"
+          alt="salad"/>
+          <p class="h5">Amazing blend of wholesome ingredients.</p>
+        <h4 class="price">$160</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+    </div>
+    <div class="col">
+      <div class="product">
+        <h2 class="productname">Calzone</h2>
+        <img
+          src="./main/img.order/Calzone_600.jpg"
+          class="step-img"
+          alt="bread"/>
+          <p class="h5">A traditional Italian stuffed bread.</p>
+        <h4 class="price">$110</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+    <div class="col">
+      <div class="product">
+        <h2 class="productname">King Prawns</h2>
+        <img
+          src="./main/img.order/KingPrawns_600.jpg"
+          class="step-img"
+          alt="prawn"/>
+          <p class="h5">Sustainably-sourced King Prawns.</p>
+        <h4 class="price">$90</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="product">
+        <h2 class="productname">Drink for Child</h2>
+        <img
+          src="./main/img.order/artworks-600.jpg"
+          class="step-img"
+          alt="drink"/>
+          <p class="h4">TODAY'S SPECIAL</p>
+        <h4 class="price">$65</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+    </div>
+    <div class="col">
+      <div class="product">
+        <h2 class="productname">Drink for Adult</h2>
+        <img
+          src="./main/img.order/artworks-600.jpg"
+          class="step-img"
+          alt="drink"/>
+          <p class="h4">TODAY'S SPECIAL</p>
+        <h4 class="price">$65</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div></div>
+    <div class="col">
+      <div class="product">
+        <h3 class="productname">Drink for Senior</h3>
+        <img
+          src="./main/img.order/artworks-600.jpg"
+          class="step-img"
+          alt="drink"/>
+          <p class="h4">TODAY'S SPECIAL</p>
+        <h4 class="price">$65</h4>
+        <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+  </div>
+    
+
+
+
+<div class="col-25">
+        <div class="container">
+          <h2 class="display-4 text-right">Cart</h2>
+          <table style="font-size: 20px;">
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <br>
+            <br>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals" style="font-size: 20px;">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity" value="quantity">0</span></td>
+              <td>$<span id="total" value="sum">0</span></td>
+            </tr></table>
+            
+          <div class="cart-buttons">
+          <button id="emptycart">Empty Cart</button>
+          <a href="#pay"><button id="checkout" type="submit">Checkout</button></a>
+          
+        </div>
+</div>
+</div>
+</div>
+     </div>
+    </div>
+
+     </div>
+     
+     
+
+<!-- payment -->
+
+
+<div id="payment">
+  
+ <div class="order-container">
+ <div class="row" id="pay">
+  <div class="col-md-6 offset-md-3">
+    <br><br><br><br><br><br><br><br><br><br>
+    <td><span id="items2"></span> item(s)</td> for total<td> $<span id="total2"></span></td>.
+    
+    <h1>Order Pick-up Information</h1>
+  <form action="./payment-submitted_page.html">
+    <div class="row">
+        <div class="form-group col-12">
+            <label for="Name">Name</label>
+            <input id="form_name" type="text" name="name" class="shadow form-control form-control-lg" placeholder="Jane Doe" pattern="[a-zA-Z]+" maxlength="30" required>
+            </div>
+            <div class="form-group col-12">
+              <label for="Address">Pickup In-Store</label>
+              <input id="store" type="text" name="name" class="shadow form-control form-control-lg" placeholder="Store Location" required>
+              </div>
+              <div class="form-group col-12">
+                <label for="Phone">Contact Number</label>
+                <input type="phone" placeholder="Tel" id="form_tel" pattern="[0-9]+" maxlength="8" class="shadow form-control form-control-lg" required>
+            </div>
+            <div class="col-lg-6 col-md mb-3">
+              <label for="Date">Pick-up Date(For future orders only)</label>
+              <input type="date" onload="new Date()" id="date"  name="date" class="shadow form-control form-control-lg">
+          </div>
+          <div class="col-lg-6 col-md mb-3">
+              <label for="when">Pick-up Time (For future orders only)</label>
+              <select type="Time" id="time" class="shadow form-control form-control-lg">
+                  <option selected value>Choose a Time</option>
+                  <option>13:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                  <option>18:00</option>
+                  <option>19:00</option>
+                  <option>20:00</option>
+                  <option>21:00</option>  
+              </select>
+          </div>
+          </div>
+              
+    <h1>Payment Method</h1>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="Card">Credit Card Number</label>
+                        <input id="intTextBox" type="card" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" onclick="onlyNumberKey(event)" class="shadow form-control form-control-lg" required>
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="Name">Name on Card</label>
+                      <input id="form_name" type="text" name="name" class="shadow form-control form-control-lg" placeholder="Jane Doe" pattern="[a-zA-Z]+" maxlength="30" required>
+                    </div>
+                    <div class="col">
+                        <label for="Date">Expiration Date</label>
+                        <input type="text" maxlength='5' placeholder="MM/YY" onkeyup="formatString(event);" class="shadow form-control form-control-lg" required>
+                    </div>
+                    <div class="col">
+                        <label for="csc">Security Code</label>
+                        <input id="intTextBox2" placeholder="CSC" maxlength="3" onclick="onlyNumberKey(event)" class="shadow form-control form-control-lg" required>
+                    </div>
+                </div>
+                    <div class="col-12 text-center p-5">
+                        <button class="btn btn-dark btn-block shadow" type="next">Submit</button>
+                    </div>
+                    </form>
+                </div>
+ </div>
+ 
+                
+  <h4>No REFUND, Exchange only.</h4>
+</div>
+
+  <footer><!-- <h3>Back to <a title="web" href="https://www.yahoo.com" target="_blank">Lion Rock</a></h3> --></footer>
+</div>
+</div>
+</div>
+<script  src="./js.order/script.js"></script>     
+<script  src="./js.order/script3.js"></script>
+<script  src="./js.order/script2.js"></script>
+<script src="js.js"></script>
+<script>
+  var today = new Date();
+   today = new Date(today.setDate(today.getDate() + 3)).toISOString().split('T')[0];
+   document.getElementsByName("date")[0].setAttribute('min', today);
+   
+   function getDate(){   var today = new Date();
+   document.getElementById("date").value = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()+1).slice(-2); }</script>
+<input type="hidden" id="timezone" name="timezone" value="+08:00" />
+  </body>
+</html>

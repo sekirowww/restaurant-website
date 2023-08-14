@@ -1,0 +1,655 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/******************************************************
+  **********************G E N E R A L****************
+  ************************************************/
+
+.body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+.my-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 9.6rem;
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff4e6;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+}
+
+.homepage-img-box {
+  margin-top: 150px !important;
+}
+
+.heading1 {
+  font-size: 3.2rem;
+  color: #212529;
+  font-weight: bold;
+  font-family: cursive;
+  font-style: oblique;
+  margin-top: 150px;
+}
+
+.heading2 {
+  font-size: 1.6rem;
+  color: #495057;
+}
+
+.heading3 {
+  font-size: 1.8rem;
+  color: #495057;
+}
+
+@media (max-width: 600px) {
+  .heading1 {
+    font-size: 2rem;
+  }
+  .heading2 {
+    font-size: 1.5rem;
+  }
+  .heading3 {
+    font-size: 1.2rem;
+  }
+}
+.margin-top {
+  margin-top: 3rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.margin-top-big {
+  margin-top: 10rem;
+}
+
+.padding-top-big {
+  padding-top: 3rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 3.5rem;
+}
+
+.tagforsection--orange {
+  font-size: 30px;
+  color: #cf711f;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.tagforsubsection--orange {
+  font-size: 20px;
+  color: #cf711f;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+.my-btn-deco {
+  padding: 10px 25px;
+  background-color: #cf711f;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 22px !important;
+}
+
+.my-btn-deco:hover {
+  background-color: #e67e22;
+  cursor: pointer;
+  color: black;
+}
+
+.my-btn-deco-small {
+  padding: 5px 15px;
+  background-color: #cf711f;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 12px !important;
+}
+
+.my-btn-deco-small:hover {
+  background-color: #e67e22;
+  cursor: pointer;
+  color: black;
+}
+
+.tagfortext-green {
+  background-color: green;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.spanbox {
+  margin: 10px 5px;
+}
+/***************************login*************************
+*******************************************************/
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 80%;
+  background-color: lightgrey;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.login-title {
+  color: #495057 !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.login-photo-box img {
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  height: 3rem;
+  background-color: #ced4da;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.submit {
+  width: 100%;
+  height: 3rem;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.login-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-my-hidden {
+  display: none;
+}
+
+/******************************************************
+  ********HEADER***********************************
+  ************************************************/
+.my-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe8cc;
+  padding: 5px 1rem 5px 5rem;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 120px;
+  position: fixed;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+
+}
+
+.icon-burger {
+  position: absolute;
+  left: 93%;
+  bottom: -23%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: #0a0a0a;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .my-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heading1 {
+    margin-top: 250px;
+  }
+}
+
+.logo {
+  height: 8em;
+  height: 8em;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+@media (max-width: 650px) {
+  
+  .main-nav-list {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 120px;
+    bottom: 120%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    background-color: rgba(72 122 180 / .2);
+    gap: 50px;
+  }
+
+  .icon-burger {
+    display: block;
+    visibility: visible;
+  }
+
+  :checked ~ .main-nav-list {
+    bottom: 0;
+  }
+
+  :checked ~ .icon-burger .line {
+    transition: all .3s ease-in-out ;
+  }
+  .my-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 630;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #bd6920;
+}
+
+/*********************************************HOME PAGE***************************************************/
+#my-homepage {
+  background-color: #fff4e6;
+  height: 750px;
+}
+
+.homepage-img-box img {
+  width: 100%;
+}
+
+.home-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  background-color: #fff4e6;
+}
+
+.home-heading-1 {
+  font-size: 3.2rem !important;
+  color: #212529;
+}
+
+.home-heading-2 {
+  font-size: 1.6rem !important;
+  color: #495057;
+}
+
+@media (max-width: 650px) {
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid {
+    gap: 1rem;
+  }
+  #my-homepage {
+    height: auto;
+  }
+}
+
+/****************************************MENU********************************************/
+#menu img {
+  width: 100%;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1000px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.meals-uplilist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meals-ullist li {
+  margin-left: 7px;
+}
+
+.menu-text-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.meals {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.meals-descirption-ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.meals-descirption-li-list {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#menu {
+  margin-bottom: 100px;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.all-recipes-photo img {
+  width: 16%;
+  transition: all 1s;
+}
+
+.all-recipes-photo img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.btn-deco {
+  padding: 10px 30px;
+  background-color: #cf711f;
+  border-radius: 100px;
+  color: white;
+  border: none;
+}
+
+/***************************************ABOUT US*************************************************/
+
+.about-us-img-box img {
+  width: 100%;
+}
+
+.about-us-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-us-container {
+  max-width: 80rem;
+  margin: 5rem auto auto auto;
+  padding: 0 3.2rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff4e6;
+  align-items: center;
+  column-gap: 1.8rem !important;
+  row-gap: 1rem !important;
+}
+
+ @media (max-width:820px){
+  .grid--2-cols{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid {
+    gap: 1rem;
+  }
+  #my-homepage {
+    height: auto;
+  }
+ }
+  
+
+
+.about-us-heading {
+  font-weight: 700;
+  color: #343a40;
+  letter-spacing: -0.5px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.heading4 {
+  font-family: cursive;
+}
+
+.about-us-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.grid--2-cols-white {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  row-gap: 7rem;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .grid--2-cols-white {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 5rem;
+    row-gap: 7rem;
+    align-items: center;
+  }
+}
+/******************************************************
+  ****************footer*********************************
+  ************************************************/
+
+.footer--grid {
+  display: grid;
+  column-gap: 3rem;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: lightgrey;
+  justify-content: center;
+}
+
+.footer-ul {
+  list-style: none;
+  text-align: center;
+}
+.footerBox {
+  align-items: center;
+}
+
+.footer--box--2 {
+  justify-content: center;
+}
+
+.footer--box--2 img {
+  width: 150px;
+}
+
+.footer--img--box {
+  align-items: center;
+}
+/**************************************************
+  ***************modal window**********************
+  *******************************************/
+.my-hidden {
+  display: none;
+}
+
+.my-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: #868e96;
+  padding: 6rem;
+  border-radius: 100px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/*************footer******************/
+.footer {
+  background-color: #dee2e6;
+  display: flex;
+  align-items: space-between;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.footer--ullist {
+  list-style: none;
+  line-height: 2;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer--ullist a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer--ullist a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
